@@ -1,0 +1,498 @@
+""" Corrigés des exercice du cours d'introduction à l'algorithmie et à Python
+""" 
+
+# ===================
+# Exercices 1.1 - 1.6
+# ===================
+from basics import variables
+
+# ===================
+# Exercices 2.1 - 2.6
+# ===================
+#from basics import expressions
+
+# ===================
+# Exercices 3.1 - 3.12
+# ===================
+#from basics import conditions
+
+# ===================
+# Exercices 4.1 - 4.
+# ===================
+#from basics import iterations
+
+
+# =======================
+# 1 Variables
+# =======================
+
+print('\n--------- exo 1.1 ---------')
+# 1.1 Affectation de variables
+# exo : créer cinq variables nommées d'après les noms suivants,
+# en leur assignant les valeurs correspondant aux types indiqués
+# mon_nom -> str
+# mon_prenom -> str
+# mon_email -> str
+# promo -> int
+# eleve -> bool
+
+mon_nom = "tata"
+mon_prenom = "toto"
+mon_email = "toto@tata.fr"
+promo = 2020
+eleve = False
+
+
+print('\n--------- exo 1.2 ---------')
+# 1.2 Afficher les contenus des variables de l'exercice 1.1
+print(mon_nom, mon_prenom, mon_email, promo, eleve, sep=" ; ")
+
+print('\n--------- exo 1.3 ---------')
+# 1.3.1 Quel est le problème ici ?
+# attention : retirer le # au début de la ligne suivante pour commencer l'exercice
+#print(variable_inconnue)
+# attention : replacer un # au début de la ligne précédente pour pouvoir poursuivre l'exercice
+
+# > la variable variable_inconnue n'a pas été définie, elle n'a pas de valeur assignée.
+
+# 1.3.2 Comment résoudre le problème ?
+
+# > on résoud le problème en assignant une valeur à la variable variable_inconnue avant d'essayer de l'afficher.
+
+# 1.3.3 Affectez la valeur "motus" à la variable nommée variable_inconnue et affichez sa valeur
+
+variable_inconnue = "motus"
+print(variable_inconnue)
+
+
+print('\n--------- exo 1.4 ---------')
+# 1.4 demo : réaffectation de variables
+mon_stylo = "rouge"
+print("mon_stylo ~>", mon_stylo)
+mon_stylo = "bleu"
+print("mon_stylo ~>", mon_stylo)
+
+# 1.4.2 demo : dynamique des variables
+mon_feutre = False
+mon_feutre = mon_stylo
+mon_stylo = mon_stylo + " et vert"
+print("mon_feutre ~>", mon_feutre)
+print("mon_stylo ~>", mon_stylo)
+
+# 1.4.3 exo : échanger les valeurs de mon_prenom et mon_nom
+
+print(mon_nom, mon_prenom, sep=" -- ")
+tempo = mon_nom
+mon_nom = mon_prenom
+mon_prenom = tempo
+print(mon_nom, mon_prenom, sep=" -- ")
+
+print('\n--------- exo 1.5 ---------')
+# 1.5 demo : les types de données fondamentaux
+print(type("abcdef"))
+print(type("a"))
+print(type(""))
+print(type("10"))
+print(type(10))
+print(type(3.14159265358979323846264338327950288419716939937510582))
+
+print('\n--------- exo 1.6 ---------')
+# opérateurs arithmétiques
+# rappel : 
+# * -> multiplication
+# / -> division
+# // -> division euclidienne
+
+# 1.6 exo : que vont afficher les instructions suivantes :
+# print(type(promo))
+# > <class 'int'>
+# print(type(42.24))
+# > <class 'float'>
+# print(type(42/24))
+# > <class 'float'>
+# print(type(42*24))
+# > <class 'int'>
+# print(type(42//24))
+# > <class 'int'>
+# print(type(mon_feutre*5))
+# > <clas 'str'>
+# print(type(0*0.0))
+# > <class 'float'>
+
+
+# =======================
+# 2 Expressions et opérateurs de test
+# =======================
+
+print('\n--------- exo 2.1 ---------')
+# 2.1 exo : testez l'égalité de 10 et "10" et affichez le résultat
+print(10 == "10")
+
+print('\n--------- exo 2.2 ---------')
+# 2.2 exo : testez la non égalité de "10.0" et "10" et affichez le résultat
+print("10.0" != "10")
+
+print('\n--------- exo 2.3 ---------')
+# 2.3. Comparaisons arithmétiques
+# Sachant que...
+pi = 3.14
+
+# 2.3.1: quel sera le résultat de : 5*5 > 30 ?
+print(5*5 > 30)
+# > False
+# 2.3.2: quel sera le résultat de : 5*3.1 < pi + 3 ?
+print(5*3.1 < pi + 3)
+# > False
+# 2.3.3: quel sera le résultat de : 5*5 <= 25.0 ?
+print(5*5 <= 25.0)
+# > True
+# 2.3.3: quel sera le résultat de : 5*5 >= 25.0 - pi ?
+print(5*5 >= 25.0 - pi)
+# > True
+# 2.3.4: quel sera le résultat de : "baba" > "pi" ?
+print("baba" > "pi")
+# > False
+
+
+print('\n--------- exo 2.4 ---------')
+# 2.4 Opérateur booléen : NOT
+# Sachant que...
+testeur = False
+
+# 2.4.1 : quel sera le résultat de : not "vrai" ?
+print(not "vrai")
+# > False
+# 2.4.2 : quel sera le résultat de : not 56 > 42 ?
+print(not 56 > 42)
+# > False
+# 2.4.3 : quel sera le résultat de : not 56 == testeur ?
+print(not 56 == testeur)
+# > True
+# 2.4.4 : quel sera le résultat de : not (56 != bool(pi))  ?
+print(not (56 != bool(pi)))
+# > False
+# 2.4.5 : quel sera le résultat de : not (not True == 42) ?
+print(not (not True == 42))
+# > False
+
+print('\n--------- exo 2.5 ---------')
+# 2.5 Opérateur booléen : AND
+# Sachant que...
+testeur = False
+
+# 2.5.1 : quel sera le résultat de : bool("a" and "b") ?
+print(bool("a" and "b"))
+# > True
+# 2.5.2 : quel sera le résultat de : not (24 < 42) and not True ?
+print(not (24 < 42) and not True)
+# > False
+# 2.5.3 : quel sera le résultat de : not 56 == testeur and bool("") ?
+print(not 56 == testeur and bool(""))
+# > False
+# 2.5.4 : quel sera le résultat de : True and False ?
+print(True and False)
+# > False
+
+
+print('\n--------- exo 2.6 ---------')
+# 2.6 Opérateur booléen : OR
+# Sachant que...
+reponse = "oui"
+testeur = False
+
+# 2.5.1 : quel sera le résultat de : True or True ?
+print(True or True)
+# > True
+# 2.5.2 : quel sera le résultat de : 24 < 42 or "abcdefg" ?
+print(24 < 42 or "abcdefg")
+# > True
+# 2.5.3 : quel sera le résultat de : reponse == "oui" or reponse == "o" ?
+print(reponse == "oui" or reponse == "o")
+# > True
+# 2.5.4 : quel sera le résultat de : False or type(45) == type(45.0) ?
+print(False or type(45) == type(45.0))
+# > False
+# 2.5.5 : quel sera le résultat de : not (56 == testeur and bool("")) or type("hello") == type(str("42")) ?
+print(not (56 == testeur and bool("")) or type("hello") == type(str("42")))
+# > True
+
+
+# ===================================
+#  3 Conditions
+# ===================================
+
+# -----------------------------------
+# Variables définies pour le reste de l'exercice :
+# Ouvrage A
+titre_A = 'A'
+tradition_A = 'Copie'
+temoin_A = 'Copie. Bibl. nat., Dupuy 350. fol. 57.'
+institution_A = 'Paris, Bibl. nat. Fr.'
+nb_pages_A = 234
+
+# Ouvrage B
+titre_B = 'B'
+tradition_B = 'Original'
+temoin_B = 'Aut. Bibl. nat., Fonds français, n° 3387, f° 5.'
+institution_B = 'Turin, Archivio di Stato'
+nb_pages_B = 100
+
+# Ouvrage C
+titre_C = 'C'
+tradition_C = 'Original'
+temoin_C = 'Aut. Bibl. nat., Fonds français, n° 3387, f° 5.'
+institution_C = 'Inconnue'
+nb_pages_C = 51
+# -----------------------------------
+
+
+print('\n--------- exo 3.1 ---------')
+# 3.1 exo : pour chaque ouvrage, afficher "l'ouvrage {titre} est conservé à Turin" si son institution est "Turin". Sinon, ne rien faire.
+if "Turin" in institution_A:
+    print("l'ouvrage", titre_A, "est conservé à Turin")
+if "Turin" in institution_B:
+    print("l'ouvrage", titre_B, "est conservé à Turin")
+if "Turin" in institution_C:
+    print("l'ouvrage", titre_C, "est conservé à Turin")
+
+
+print('\n--------- exo 3.2 ---------')
+# 3.2 exo : pour chaque ouvrage, tester si sa tradition est différente de 'Copie'. Si oui, afficher son titre et son instution de conservation, sinon, afficher afficher le titre de l'ouvrage, son instution de conservation et sa tradition.
+if tradition_A == "Copie":
+    print(titre_A, institution_A)
+else:
+    print(titre_A, institution_A, tradition_A)
+
+if tradition_B == "Copie":
+    print(titre_B, institution_B)
+else:
+    print(titre_B, institution_B, tradition_B)
+
+if tradition_C == "Copie":
+    print(titre_C, institution_C)
+else:
+    print(titre_C, institution_C, tradition_C)
+
+
+print('\n--------- exo 3.3 ---------')
+# 3.3 exo : tester si le nombre total de pages (tout ouvrage confondu) est supérieur à 300
+# Si oui, afficher le nombre de pages excedentaires
+# S'il est inférieur à 300 afficher le nombre de pages manquantes pour atteindre ce chiffre
+# Sinon, afficher 300
+
+nb_pages_total = nb_pages_A + nb_pages_B + nb_pages_C
+if nb_pages_total > 300:
+    print("+", nb_pages_total - 300)
+elif nb_pages_total < 300:
+    print("-", 300 - nb_pages_total)
+else:
+    print(300) 
+
+
+print('\n--------- exo 3.4 ---------')
+# 3.4 exo : Avec une seule expression 'if', tester si parmi les ouvrages il existe au moins une 'Copie'
+if "Copie" in tradition_A or "Copie" in tradition_B or "Copie" in tradition_C:
+    print("il y a une copie parmi les ouvrages")
+
+
+print('\n--------- exo 3.5 ---------')
+# 3.5 exo : Seuls les ouvrages de Paris et de Turin sont disponibles à la consultation. Pour chaque ouvrage,
+# * S'il est conservé à Paris, Bibl. nat. Fr. OU à Turin, Archivio di Stato, afficher toutes les informations dont vous disposez.
+# * Sinon, afficher le message 'Ouvrage {titre} non disponible'
+if institution_A == "Paris, Bibl. nat. Fr." or institution_A == "Turin, Archivio di Stato":
+    print(titre_A, tradition_A, temoin_A, institution_A,nb_pages_A, sep=" ; ")
+else:
+    print("Ouvrage", titre_A, "non disponible")
+
+if institution_B == "Paris, Bibl. nat. Fr." or institution_B == "Turin, Archivio di Stato":
+    print(titre_B, tradition_B, temoin_B, institution_B,nb_pages_B, sep=" ; ")
+else:
+    print("Ouvrage", titre_B, "non disponible")
+
+if institution_C == "Paris, Bibl. nat. Fr." or institution_C == "Turin, Archivio di Stato":
+    print(titre_C, tradition_C, temoin_C, institution_C,nb_pages_C, sep=" ; ")
+else:
+    print("Ouvrage", titre_C, "non disponible")
+
+
+print('\n--------- exo 3.6 ---------')
+# 3.6 exo : Pour chaque ouvrage, tester si la tradition est 'Original'. 
+# * Si tel est le cas, tester si le nombre de page est supérieur ou égal à 100
+#    * Si tel est le cas, afficher le témoin. Sinon, afficher le message "L'ouvrage comporte moins de 100 pages"
+# * Si la tradition n'est pas 'Original', afficher le message "L'ouvrage XXX n'est pas un original"
+
+if tradition_A == "Original":
+    if nb_pages_A >= 100:
+        print(temoin_A)
+    else:
+        print("L'ouvrage comporte moins de 100 pages")
+else:
+    print("L'ouvrage", titre_A, "n'est pas un original")
+
+if tradition_B == "Original":
+    if nb_pages_B >= 100:
+        print(temoin_B)
+    else:
+        print("l'ouvrage comporte moins de 100 pages")
+else:
+    print("L'ouvrage", titre_B, "n'est pas un original")
+
+if tradition_C == "Original":
+    if nb_pages_C >= 100:
+        print(temoin_C)
+    else:
+        print("l'ouvrage comporte moins de 100 pages")
+else:
+    print("L'ouvrage", titre_C, "n'est pas un original")
+
+
+print('\n--------- exo 3.7 ---------')
+# 3.7 exo : tester si la tradition de l'ouvrage C est 'Original' ET s'il possède plus de 100 pages. Afficher l'institution de conservation le cas échéant, afficher un message à caractère informatif pour l'utilisateur dans le cas contraire.
+if tradition_C == "Original" and nb_pages_C > 100:
+    print(institution_C)
+else:
+    if tradition_C != "Original":
+        print("L'ouvrage n'est pas un original")
+    if nb_pages_C < 100:
+        print("L'ouvrage comporte moins de 100 pages")
+
+
+print('\n--------- exo 3.8 ---------')
+# 3.8 exo : tester si parmi les ouvrages il existe au moins un ouvrage de plus de 10 pages dont l'insitution est 'Inconnue'
+trouve = False
+if nb_pages_A >= 10:
+    if "Inconnue" in institution_A:
+        print(titre_A, "répond aux critères.")
+        trouve = True
+elif nb_pages_B >= 10:
+    if "Inconnue" in institution_B:
+        print(titre_B, "répond aux critères.")
+        trouve = True
+elif nb_pages_C >= 10:
+    if "Inconnue" in institution_C:
+        print(titre_C, "répond aux critères.")
+        trouve = True
+
+if trouve is False:
+    print("Aucun des ouvrages ne répond aux critères.")
+
+
+print('\n--------- exo 3.9 ---------')
+# 3.9 exo : pour chaque ouvrage, tester si le nombre de pages est inférieur à 200 et si l'institution n'est pas 'Inconnue'. Afficher un message pertinent si l'une des deux conditions n'est pas remplie.
+if nb_pages_A < 200 and not "Inconnue" in institution_A:
+    print(titre_A, "répond aux critères.")
+else:
+    if nb_pages_A >= 200:
+        print(titre_A, "a trop de pages.")
+    elif institution_A == "Inconnue":
+        print("L'institution de", titre_A, "est inconnue.")
+
+if nb_pages_B < 200 and not "Inconnue" in institution_B:
+    print(titre_B, "répond aux critères.")
+else:
+    if nb_pages_B >= 200:
+        print(titre_B, "a trop de pages.")
+    elif institution_B == "Inconnue":
+        print("L'institution de", titre_B, "est inconnue.")
+
+if nb_pages_C < 200 and not "Inconnue" in institution_C:
+    print(titre_C, "répond aux critères.")
+else:
+    if nb_pages_C >= 200:
+        print(titre_C, "a trop de pages.")
+    elif institution_C == "Inconnue":
+        print("L'institution de", titre_C, "est inconnue.")
+
+
+print('\n--------- exo 3.10 ---------')
+# 3.10 exo : afficher le témoin des ouvrages respectant AU MOINS une des contraintes suivantes :
+#   * plus de 50 pages mais de moins de 100 pages
+#   * l'institution est 'Inconnue'
+
+if 50 < nb_pages_A < 100 and institution_A == "Inconnue":
+    print(temoin_A)
+
+if 50 < nb_pages_B < 100 and institution_B == "Inconnue":
+    print(temoin_B)
+
+if 50 < nb_pages_C < 100 and institution_C == "Inconnue":
+    print(temoin_C)
+
+
+
+
+# =======================
+# 4 Iterations
+# =======================
+
+print('\n--------- exo 4.1 ---------')
+# 4.1 exo : rédiger un petit programme qui affiche le dessin suivant :
+# * 
+# * * 
+# * * * 
+# * * * * 
+# * * * * * 
+# * * * * 
+# * * * 
+# * * 
+# *
+
+for i in range(1,6):
+    print("* " * i)
+for j in range(1,6):
+    i = i - 1
+    print("* " * i)
+
+
+print('\n--------- exo 4.2 ---------')
+# 4.2 exo : rédiger un petit programme qui, pour une liste donnée, affiche chaque élément de la liste suivi de son type. 
+liste_42 = [["A"], False, 'tnah', 42, (45*3)/5, range(4)]
+for i in liste_42:
+    print(type(i))
+
+
+print('\n--------- exo 4.3 ---------')
+import random
+# Sachant que "random.randint(0, 50)" permet de générer un nombre entier compris en 0 et 50.
+# rédiger un petit programme qui génère un nombre au hasard et demande à l'utilisateur-rice de le deviner en autant de coups de nécessaire. Si l'utilisateur-rice se trompe, le programme indique si le nombre à trouver est plus petit ou plus grand que celui donné.
+
+'''secret = random.randint(0,50)
+essai = int(input("Essaie de deviner le chiffre secret! "))
+while essai != secret:
+    if essai > secret:
+        essai = int(input("Trop grand, essaie encore! "))
+    elif essai < secret:
+        essai = int(input("Trop petit, essaie encore! "))
+print("Bravo !")
+'''
+
+print('\n--------- exo 4.4 ---------')
+# 4.4 exo : écrire un petit programme qui prend deux entiers (n et m) et génère une liste de longueur n, contenant des listes de longueur m. Chacune de ces listes de longueur m est remplie d'une suite de chiffres allant de 0 à m.
+
+n = 4
+m = 6
+
+col = []
+for i in range(n):
+    row = []
+    for j in range(m):
+        row.append(j)
+    col.append(row)
+print(col)
+
+
+print('\n--------- exo 4.5 ---------')
+# 4.5 exo : Indexation
+# Etant donnée la liste suivante : 
+exo_index = [1, 2, "B", True, [3.14, "pi"], ['A', 'Z', 'R', ['T', 'Y']], 8]
+# 4.5.1 Comment afficher "B"?
+print(exo_index[2])
+# 4.5.2 Comment afficher "T"?
+print(exo_index[5][3][0])
+# 4.5.3 Comment afficher "[2, "B", True]"?
+print(exo_index[1:4])
+# 4.5.4 Comment afficher "3.14"?
+print(exo_index[4][0])
+# 4.5.5 Comment afficher "8"?
+print(exo_index[-1])
+

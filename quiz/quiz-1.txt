@@ -1,0 +1,66 @@
+1 Quelle version de Python faut-il utiliser ?
+- Python 2
+- Python 3
+- N'importe quelle Python
+- Il n'existe qu'une seule version de Python
+
+2. Qu'est-ce qu'une fonction built-in ?
+- Une fonction qui permet de construire un objet
+- Une fonction d'affichage
+- Une fonction qui existe par défaut dans Python
+- Une fonction de sauvegarde
+
+3. Dans l'ennoncé suivant, quel est le problème ?
+```
+print("hello world)
+  File "<stdin>", line 1
+    print("hello world)
+                      ^
+SyntaxError: EOL while scanning string literal
+```
+- On n'utilise pas la bonne version de Python
+- Python ne connaît pas la fonction appellée
+- On a oublié de fermer la chaîne de caractères
+- `hello world" sont des mots réservés
+
+4. Donner trois exemples de mots réservés
+>
+
+5. Quel est le type de "False":
+- string
+- float
+- boolean
+- False n'a pas de type 
+
+6. Quels sont les noms des variables valides parmis les propositions suivantes
+- `#mavariable`
+- `1_variable`
+- `variable`
+- `ma_variable`
+- `ceci-est-une-variable`
+- `__var__`
+
+7. Quelle sera l'output de `print(type("18.21"))` ?
+- <class 'int'>
+- <class 'bool'>
+- <class 'float'>
+- <class 'str'>
+
+8. Quelle sera l'output de `print(type(8 / 4))` ?
+- <class 'int'>
+- <class 'bool'>
+- <class 'float'>
+- <class 'str'>
+
+9. Quelle sera l'output de `print("(8 / 4) + 56")` ?
+- 58.0
+- "58.0"
+- 58
+- "58"
+
+10. Quel sera l'output de `print(bool(12), bool(0), type(56), sep="...")
+- True, <class 'bool'>, 56
+- True...False...<class 'int'>
+- False...False...True
+- False, True, int
+

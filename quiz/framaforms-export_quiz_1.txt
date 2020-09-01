@@ -1,0 +1,565 @@
+$webform = array (
+  'nid' => '179640',
+  'next_serial' => '4',
+  'confirmation' => '',
+  'confirmation_format' => NULL,
+  'redirect_url' => '<confirmation>',
+  'status' => '1',
+  'block' => '0',
+  'allow_draft' => '0',
+  'auto_save' => '0',
+  'submit_notice' => '1',
+  'confidential' => '0',
+  'submit_text' => '',
+  'submit_limit' => '-1',
+  'submit_interval' => '-1',
+  'total_submit_limit' => '-1',
+  'total_submit_interval' => '-1',
+  'progressbar_bar' => '1',
+  'progressbar_page_number' => '0',
+  'progressbar_percent' => '0',
+  'progressbar_pagebreak_labels' => '1',
+  'progressbar_include_confirmation' => '1',
+  'progressbar_label_first' => 'Début',
+  'progressbar_label_confirmation' => 'Terminé',
+  'preview' => '0',
+  'preview_next_button_label' => '',
+  'preview_prev_button_label' => '',
+  'preview_title' => '',
+  'preview_message' => '',
+  'preview_message_format' => NULL,
+  'preview_excluded_components' => 
+  array (
+  ),
+  'confirm_email_request_lifetime' => NULL,
+  'confirm_email_delete_submissions' => '0',
+  'record_exists' => true,
+  'roles' => 
+  array (
+    0 => '1',
+    1 => '2',
+  ),
+  'emails' => 
+  array (
+  ),
+  'components' => 
+  array (
+    6 => 
+    array (
+      'nid' => 179640,
+      'cid' => '6',
+      'pid' => '0',
+      'form_key' => 'new_1582728052131',
+      'name' => 'Nom',
+      'type' => 'textfield',
+      'value' => '',
+      'extra' => 
+      array (
+        'width' => '',
+        'maxlength' => '',
+        'minlength' => '',
+        'field_prefix' => '',
+        'field_suffix' => '',
+        'disabled' => 0,
+        'unique' => 0,
+        'title_display' => 'inline',
+        'description' => '',
+        'description_above' => false,
+        'placeholder' => '',
+        'attributes' => 
+        array (
+        ),
+        'private' => 0,
+        'analysis' => false,
+        'css_classes' => '',
+        'wrapper_classes' => '',
+      ),
+      'required' => '1',
+      'weight' => '1',
+      'page_num' => 1,
+    ),
+    7 => 
+    array (
+      'nid' => 179640,
+      'cid' => '7',
+      'pid' => '0',
+      'form_key' => 'new_1582728094406',
+      'name' => 'Prénom',
+      'type' => 'textfield',
+      'value' => '',
+      'extra' => 
+      array (
+        'width' => '',
+        'maxlength' => '',
+        'minlength' => '',
+        'field_prefix' => '',
+        'field_suffix' => '',
+        'disabled' => 0,
+        'unique' => 0,
+        'title_display' => 'inline',
+        'description' => '',
+        'description_above' => false,
+        'placeholder' => '',
+        'attributes' => 
+        array (
+        ),
+        'private' => 0,
+        'analysis' => false,
+        'css_classes' => '',
+        'wrapper_classes' => '',
+      ),
+      'required' => '1',
+      'weight' => '2',
+      'page_num' => 1,
+    ),
+    8 => 
+    array (
+      'nid' => 179640,
+      'cid' => '8',
+      'pid' => '0',
+      'form_key' => 'new_1582728124150',
+      'name' => 'email',
+      'type' => 'textfield',
+      'value' => '',
+      'extra' => 
+      array (
+        'width' => '',
+        'maxlength' => '',
+        'minlength' => '',
+        'field_prefix' => '',
+        'field_suffix' => '',
+        'disabled' => 0,
+        'unique' => 0,
+        'title_display' => 'inline',
+        'description' => '',
+        'description_above' => false,
+        'placeholder' => '',
+        'attributes' => 
+        array (
+        ),
+        'private' => 0,
+        'analysis' => false,
+        'css_classes' => '',
+        'wrapper_classes' => '',
+      ),
+      'required' => '0',
+      'weight' => '3',
+      'page_num' => 1,
+    ),
+    10 => 
+    array (
+      'nid' => 179640,
+      'cid' => '10',
+      'pid' => '0',
+      'form_key' => 'new_1582728159801',
+      'name' => 'Saut de page',
+      'type' => 'pagebreak',
+      'value' => '',
+      'extra' => 
+      array (
+        'private' => false,
+        'next_page_label' => '',
+        'prev_page_label' => '',
+      ),
+      'required' => '0',
+      'weight' => '4',
+      'page_num' => 2,
+    ),
+    2 => 
+    array (
+      'nid' => 179640,
+      'cid' => '2',
+      'pid' => '0',
+      'form_key' => 'new_1582727833021',
+      'name' => '1. Quelle version de Python faut-il utiliser ?',
+      'type' => 'select',
+      'value' => '',
+      'extra' => 
+      array (
+        'items' => '1|A. Python 2
+2|B. Python 3
+3|C. N\'importe laquelle de ces deux versions
+Il n\'y a qu\'une seule version de Python|D. Il n\'y a qu\'une seule version de Python
+',
+        'multiple' => false,
+        'aslist' => false,
+        'empty_option' => '',
+        'optrand' => 0,
+        'other_option' => NULL,
+        'other_text' => 'Autre...',
+        'title_display' => 'before',
+        'description' => '',
+        'description_above' => false,
+        'custom_keys' => 0,
+        'options_source' => '',
+        'private' => 0,
+        'analysis' => true,
+        'value' => '1',
+        'css_classes' => '',
+        'wrapper_classes' => '',
+      ),
+      'required' => '1',
+      'weight' => '5',
+      'page_num' => 2,
+    ),
+    4 => 
+    array (
+      'nid' => 179640,
+      'cid' => '4',
+      'pid' => '0',
+      'form_key' => 'new_1582727938968',
+      'name' => '2. Qu\'est-ce qu\'une "fonction built-in" ?',
+      'type' => 'select',
+      'value' => '',
+      'extra' => 
+      array (
+        'items' => '1|A. Une fonction qui permet de construire un objet
+2|B. Une fonction d\'affichage
+3|C. Une fonction qui existe par défaut dans Python
+Une fonction de sauvegarde|D. Une fonction de sauvegarde
+',
+        'multiple' => false,
+        'aslist' => false,
+        'empty_option' => '',
+        'optrand' => 0,
+        'other_option' => NULL,
+        'other_text' => 'Autre...',
+        'title_display' => 'before',
+        'description' => '',
+        'description_above' => false,
+        'custom_keys' => 0,
+        'options_source' => '',
+        'private' => 0,
+        'analysis' => true,
+        'value' => '1',
+        'css_classes' => '',
+        'wrapper_classes' => '',
+      ),
+      'required' => '1',
+      'weight' => '6',
+      'page_num' => 2,
+    ),
+    12 => 
+    array (
+      'nid' => 179640,
+      'cid' => '12',
+      'pid' => '0',
+      'form_key' => 'new_1582728223184',
+      'name' => '3. Dans l\'ennoncé suivant, quel est le problème ?',
+      'type' => 'select',
+      'value' => '',
+      'extra' => 
+      array (
+        'items' => '3|A. On a oublié de fermer la chaîne de caractères
+1|B. On n\'utilise pas la bonne version de Python
+2|C. Python ne connaît pas la fonction appelée
+"hello" et "world" sont des mots réservés|D. "hello" et "world" sont des mots réservés
+',
+        'multiple' => false,
+        'aslist' => false,
+        'empty_option' => '',
+        'optrand' => 0,
+        'other_option' => NULL,
+        'other_text' => 'Autre...',
+        'title_display' => 'before',
+        'description' => '',
+        'description_above' => false,
+        'custom_keys' => 0,
+        'options_source' => '',
+        'private' => 0,
+        'analysis' => true,
+        'value' => '1',
+        'css_classes' => '',
+        'wrapper_classes' => '',
+      ),
+      'required' => '1',
+      'weight' => '7',
+      'page_num' => 2,
+    ),
+    28 => 
+    array (
+      'nid' => 179640,
+      'cid' => '28',
+      'pid' => '0',
+      'form_key' => 'new_1582735805625',
+      'name' => 'Nouveau champ "balisage"',
+      'type' => 'markup',
+      'value' => '<p><code>print("hello world)<br/>
+File "< stdin >", line 1<br/>
+..print("hello world)<br/>
+...................^<br/>
+SyntaxError: EOL while scanning string literal</code></p>',
+      'extra' => 
+      array (
+        'format' => 'filtered_html',
+        'private' => false,
+        'display_on' => 'form',
+      ),
+      'required' => '0',
+      'weight' => '8',
+      'page_num' => 2,
+    ),
+    16 => 
+    array (
+      'nid' => 179640,
+      'cid' => '16',
+      'pid' => '0',
+      'form_key' => 'new_1582728773860',
+      'name' => '4. Donner trois exemples de mots réservés :',
+      'type' => 'textfield',
+      'value' => '',
+      'extra' => 
+      array (
+        'width' => '',
+        'maxlength' => '',
+        'minlength' => '',
+        'field_prefix' => '',
+        'field_suffix' => '',
+        'disabled' => 0,
+        'unique' => 0,
+        'title_display' => 'before',
+        'description' => '',
+        'description_above' => false,
+        'placeholder' => '',
+        'attributes' => 
+        array (
+        ),
+        'private' => 0,
+        'analysis' => false,
+        'css_classes' => '',
+        'wrapper_classes' => '',
+      ),
+      'required' => '1',
+      'weight' => '10',
+      'page_num' => 2,
+    ),
+    18 => 
+    array (
+      'nid' => 179640,
+      'cid' => '18',
+      'pid' => '0',
+      'form_key' => 'new_1582728825989',
+      'name' => '5. Quel est le type de <code>"False"</code> ?',
+      'type' => 'select',
+      'value' => '',
+      'extra' => 
+      array (
+        'items' => '2|A. float
+3|B. boolean
+1|C. string
+False n\'a pas de type|D. False n\'a pas de type
+',
+        'multiple' => false,
+        'aslist' => false,
+        'empty_option' => '',
+        'optrand' => 0,
+        'other_option' => NULL,
+        'other_text' => 'Autre...',
+        'title_display' => 'before',
+        'description' => '',
+        'description_above' => false,
+        'custom_keys' => 0,
+        'options_source' => '',
+        'private' => 0,
+        'analysis' => true,
+        'value' => '1',
+        'css_classes' => '',
+        'wrapper_classes' => '',
+      ),
+      'required' => '1',
+      'weight' => '11',
+      'page_num' => 2,
+    ),
+    20 => 
+    array (
+      'nid' => 179640,
+      'cid' => '20',
+      'pid' => '0',
+      'form_key' => 'new_1582728907104',
+      'name' => '6. Quelles sont les noms de variables valides parmi les propositions suivantes ?',
+      'type' => 'select',
+      'value' => '',
+      'extra' => 
+      array (
+        'items' => '1|A. <code>#variable</code>
+2|B. <code>1_variable</code>
+3|C. <code>variable</code>
+ma_variable|D. <code>ma_variable</code>
+ceci-est-une-variable|E. <code>ceci-est-une-variable</code>
+__var__|F. <code>__var__</code>
+',
+        'multiple' => true,
+        'aslist' => false,
+        'empty_option' => '',
+        'optrand' => 0,
+        'other_option' => NULL,
+        'other_text' => 'Autre...',
+        'title_display' => 'before',
+        'description' => '',
+        'description_above' => false,
+        'custom_keys' => 0,
+        'options_source' => '',
+        'private' => 0,
+        'analysis' => true,
+        'value' => '1,2',
+        'css_classes' => '',
+        'wrapper_classes' => '',
+      ),
+      'required' => '1',
+      'weight' => '12',
+      'page_num' => 2,
+    ),
+    21 => 
+    array (
+      'nid' => 179640,
+      'cid' => '21',
+      'pid' => '0',
+      'form_key' => 'new_1582734867829',
+      'name' => '7.  Quelle sera l\'output de : <code>print(type("18.21"))</code> ?',
+      'type' => 'select',
+      'value' => '',
+      'extra' => 
+      array (
+        'items' => '1|A. <code>< class \'int\' ></code>
+2|B. <code>< class \'bool\' ></code>
+3|C. <code>< class \'str\' ></code>
+- < class \'float\' >"|D. <code>< class \'float\' >"</code>
+',
+        'multiple' => false,
+        'aslist' => false,
+        'empty_option' => '',
+        'optrand' => 0,
+        'other_option' => NULL,
+        'other_text' => 'Autre...',
+        'title_display' => 'before',
+        'description' => '',
+        'description_above' => false,
+        'custom_keys' => 0,
+        'options_source' => '',
+        'private' => 0,
+        'analysis' => true,
+        'value' => '1',
+        'css_classes' => '',
+        'wrapper_classes' => '',
+      ),
+      'required' => '1',
+      'weight' => '13',
+      'page_num' => 2,
+    ),
+    22 => 
+    array (
+      'nid' => 179640,
+      'cid' => '22',
+      'pid' => '0',
+      'form_key' => 'new_1582735101735',
+      'name' => '8. Quelle sera l\'output de : <code>print(type(8/4))</code> ?',
+      'type' => 'select',
+      'value' => '',
+      'extra' => 
+      array (
+        'items' => '1|A. <code>< class \'int\' ></code>
+2|B. <code>< class \'bool\' ></code>
+3|C. <code>< class \'str\' ></code>
+- < class \'float\' >"|D. <code>< class \'float\' >"</code>
+',
+        'multiple' => false,
+        'aslist' => false,
+        'empty_option' => '',
+        'optrand' => 0,
+        'other_option' => NULL,
+        'other_text' => 'Autre...',
+        'title_display' => 'before',
+        'description' => '',
+        'description_above' => false,
+        'custom_keys' => 0,
+        'options_source' => '',
+        'private' => 0,
+        'analysis' => true,
+        'value' => '1',
+        'css_classes' => '',
+        'wrapper_classes' => '',
+      ),
+      'required' => '1',
+      'weight' => '14',
+      'page_num' => 2,
+    ),
+    24 => 
+    array (
+      'nid' => 179640,
+      'cid' => '24',
+      'pid' => '0',
+      'form_key' => 'new_1582735150515',
+      'name' => '9. Quelle sera l\'output de : <code>print("(8 / 4) + 56")</code> ?',
+      'type' => 'select',
+      'value' => '',
+      'extra' => 
+      array (
+        'items' => '1|A. <code>"58"</code>
+2|B. <code>58</code>
+3|C. <code>"58.0"</code>
+- < class \'float\' >"|D. <code>"(8 / 4) + 56"</code>
+',
+        'multiple' => false,
+        'aslist' => false,
+        'empty_option' => '',
+        'optrand' => 0,
+        'other_option' => NULL,
+        'other_text' => 'Autre...',
+        'title_display' => 'before',
+        'description' => '',
+        'description_above' => false,
+        'custom_keys' => 0,
+        'options_source' => '',
+        'private' => 0,
+        'analysis' => true,
+        'value' => '1',
+        'css_classes' => '',
+        'wrapper_classes' => '',
+      ),
+      'required' => '1',
+      'weight' => '16',
+      'page_num' => 2,
+    ),
+    26 => 
+    array (
+      'nid' => 179640,
+      'cid' => '26',
+      'pid' => '0',
+      'form_key' => 'new_1582735339336',
+      'name' => '10. Quel sera l\'output de : <code>print(bool(12), bool(0), type(56), sep="...")</code> ?',
+      'type' => 'select',
+      'value' => '',
+      'extra' => 
+      array (
+        'items' => '1|A. <code>True, < class \'bool\' >, 56</code>
+2|B. <code>True...False...< class \'int\' ></code>
+3|C. <code>False...False...True</code>
+- < class \'float\' >"|D. <code>False, True, int</code>
+',
+        'multiple' => false,
+        'aslist' => false,
+        'empty_option' => '',
+        'optrand' => 0,
+        'other_option' => NULL,
+        'other_text' => 'Autre...',
+        'title_display' => 'before',
+        'description' => '',
+        'description_above' => false,
+        'custom_keys' => 0,
+        'options_source' => '',
+        'private' => 0,
+        'analysis' => true,
+        'value' => '1',
+        'css_classes' => '',
+        'wrapper_classes' => '',
+      ),
+      'required' => '1',
+      'weight' => '17',
+      'page_num' => 2,
+    ),
+  ),
+  'conditionals' => 
+  array (
+  ),
+);
+
